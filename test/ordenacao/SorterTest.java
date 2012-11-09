@@ -8,10 +8,10 @@ import org.junit.Test;
  *
  */
 public class SorterTest {
+	private final Sorter sorter = new Sorter();
+
 	@Test
 	public void arrayComUmElementoJaEstaOrdenado(){
-		Sorter sorter = new Sorter();
-		
 		int[] arrayToBeOrdered = {10};
 		int[] arrayOrdenado = sorter.sort(arrayToBeOrdered);
 		
@@ -20,8 +20,6 @@ public class SorterTest {
 	
 	@Test
 	public void arrayComDoisElementosTrocados(){
-		Sorter sorter = new Sorter();
-		
 		int[] arrayToBeOrdered = {20,10};
 		int[] arrayOrdenado = sorter.sort(arrayToBeOrdered);
 		
