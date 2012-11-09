@@ -33,4 +33,12 @@ public class SorterTest {
 
 		Assert.assertArrayEquals(new int[] { 10, 20, 30, 40, 50, 60 }, arrayOrdenado);
 	}
+	
+	@Test
+	public void ordenarArrayNemTodosParesSaoInvertidos(){
+		int[] arrayToBeOrdered = { 20, 10, 30, 40, 60, 50 };
+		int[] arrayOrdenado = sorter.sort(arrayToBeOrdered);
+
+		Assert.assertArrayEquals(new int[] { 10, 20, 30, 40, 50, 60 }, arrayOrdenado);
+	}
 }
