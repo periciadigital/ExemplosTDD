@@ -12,8 +12,9 @@ public class SorterTest {
 	public void arrayComUmElementoJaEstaOrdenado(){
 		Sorter sorter = new Sorter();
 		
-		int[] arrayOrdenado = sorter.sort(new int[]{10});
+		int[] arrayToBeOrdered = new int[]{10};
+		int[] arrayOrdenado = sorter.sort(arrayToBeOrdered);
 		
-		Assert.assertArrayEquals(new int[]{10}, arrayOrdenado);
+		Assert.assertArrayEquals(arrayToBeOrdered, arrayOrdenado);
 	}
 }

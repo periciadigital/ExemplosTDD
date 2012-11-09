@@ -2,6 +2,6 @@ package ordenacao;
 
 public class Sorter {
 	public int[] sort(int[] arrayToBeOrdered) {
-		return new int[]{10};
+		return arrayToBeOrdered;
 	}
 }
