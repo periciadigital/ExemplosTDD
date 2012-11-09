@@ -42,7 +42,7 @@ public class SorterTest {
 		Assert.assertArrayEquals(new int[] { 10, 20, 30, 40, 50, 60 }, arrayOrdenado);
 	}
 	
-	@Test
+	@Test(timeout=5000)
 	public void ordenarArrayInvertido(){
 		int[] arrayToBeOrdered = { 50, 40, 30, 20, 10 };
 		int[] arrayOrdenado = sorter.sort(arrayToBeOrdered);
