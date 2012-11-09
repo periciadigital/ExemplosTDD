@@ -12,9 +12,19 @@ public class SorterTest {
 	public void arrayComUmElementoJaEstaOrdenado(){
 		Sorter sorter = new Sorter();
 		
-		int[] arrayToBeOrdered = new int[]{10};
+		int[] arrayToBeOrdered = {10};
 		int[] arrayOrdenado = sorter.sort(arrayToBeOrdered);
 		
 		Assert.assertArrayEquals(arrayToBeOrdered, arrayOrdenado);
+	}
+	
+	@Test
+	public void arrayComDoisElementosTrocados(){
+		Sorter sorter = new Sorter();
+		
+		int[] arrayToBeOrdered = {20,10};
+		int[] arrayOrdenado = sorter.sort(arrayToBeOrdered);
+		
+		Assert.assertArrayEquals(new int[]{10, 20}, arrayOrdenado);
 	}
 }
